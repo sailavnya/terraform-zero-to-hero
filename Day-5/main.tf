@@ -104,3 +104,8 @@ resource "aws_instance" "server" {
   }
 }
 
+/*  
+
+I have find clear cut solution in google "To run a shell script in the background, use the “&(ampersand)” bash control operator and the built-in “nohup” command line tool. Both these utilities almost perform the same job. The core difference between both of them is that the “nohup” command does not kill the background process 
+at the session termination while the “&” symbol terminates all processes after the system logout" this is the correct solution for your assignment i think.
+*/
